@@ -31,7 +31,7 @@ const docker = [
     description: "Scraper Spotify, Apple Music et Deezer",
     stack: ["Python", "Playwright", "Chromium"],
     links: [
-      { label: "voir le code", link: "http://artemis-code.olympe.center" },
+      { label: "voir le code", link: "https://artemis-code.olympe.center" },
     ],
   },
   {
@@ -88,8 +88,8 @@ const interfaces = [
       "Jest",
     ],
     links: [
-      { label: "voir le site", link: "http://elysium.olympe.center" },
-      { label: "voir le code", link: "http://elysium-code.olympe.center" },
+      { label: "voir le site", link: "https://elysium.olympe.center" },
+      { label: "voir le code", link: "https://elysium-code.olympe.center" },
     ],
   },
   {
@@ -108,8 +108,8 @@ const interfaces = [
       "Qrcode.React",
     ],
     links: [
-      { label: "voir le site", link: "http://hephaistos.olympe.center" },
-      { label: "voir le code", link: "http://hephaistos-code.olympe.center" },
+      { label: "voir le site", link: "https://hephaistos.olympe.center" },
+      { label: "voir le code", link: "https://hephaistos-code.olympe.center" },
     ],
   },
 ];
@@ -121,10 +121,10 @@ const extension = [
       "Extension Chrome qui capture et transmet les cookies YouTube à Orphée via Hephaïstos.",
     stack: ["JS", "Manifest V3"],
     links: [
-      { label: "voir l'extension", link: "http://ambrosia.olympe.center" },
+      { label: "voir l'extension", link: "https://ambrosia.olympe.center" },
       {
         label: "voir le code",
-        link: "http://ambrosia-code.olympe.center",
+        link: "https://ambrosia-code.olympe.center",
       },
     ],
   },
@@ -279,7 +279,7 @@ export default function BackendSection() {
             </p>
             <a
               ref={refCTA}
-              href="http://olympe-code.olympe.center"
+              href="https://olympe-code.olympe.center"
               target="_blank"
               rel="noopener"
               className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
