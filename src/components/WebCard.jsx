@@ -118,7 +118,7 @@ export default function WebCard({
 
               {/* Mobile links — below metrics */}
               {links.filter((l) => l.link).length > 0 && (
-                <div className="min-[900px]:hidden flex justify-between gap-3">
+                <div className="min-[900px]:hidden flex gap-3">
                   {links
                     .filter((l) => l.link)
                     .map(({ label, link }) => (
