@@ -63,7 +63,7 @@ export default function WebCard({
                   )}
                 </div>
 
-                <div className="flex gap-6">
+                <div className="max-[900px]:hidden flex gap-6">
                   {links
                     .filter((l) => l.link)
                     .map(({ label, link }) => (
@@ -115,6 +115,38 @@ export default function WebCard({
                   </div>
                 ))}
               </div>
+
+              {/* Mobile links — below metrics */}
+              {links.filter((l) => l.link).length > 0 && (
+                <div className="min-[900px]:hidden flex justify-between gap-3">
+                  {links
+                    .filter((l) => l.link)
+                    .map(({ label, link }) => (
+                      <a
+                        key={link}
+                        href={link}
+                        target="_blank"
+                        rel="noopener"
+                        className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
+                      >
+                        {label}
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="shrink-0 transition-transform duration-300"
+                        >
+                          <path d="M2 12L12 2M12 2H4M12 2V10" />
+                        </svg>
+                      </a>
+                    ))}
+                </div>
+              )}
             </div>
           </div>
 
