@@ -279,8 +279,7 @@ export default function BackendSection() {
             </p>
             <a
               ref={refCTA}
-              // href="http://olympe-code.olympe.center"
-              href="https://github.com/anthony-rgs/olympe"
+              href="http://olympe-code.olympe.center"
               target="_blank"
               rel="noopener"
               className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
