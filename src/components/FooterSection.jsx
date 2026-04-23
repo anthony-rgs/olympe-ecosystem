@@ -66,7 +66,7 @@ export default function FooterSection() {
         </span>
         <div className="overflow-hidden pb-1">
           <a
-            href="/src/assets/images/cv-ringressi-anthony.pdf"
+            href="/images/cv-ringressi-anthony.pdf"
             target="_blank"
             rel="noopener"
             onMouseEnter={() => setHovered(true)}

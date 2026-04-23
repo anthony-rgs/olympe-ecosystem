@@ -18,8 +18,8 @@ const projects = [
       "Jest",
     ],
     links: [
-      { label: "voir le code", link: "https://elysium-code.olympe.center" },
-      { label: "voir le site", link: "https://elysium.olympe.center" },
+      { label: "voir le code", link: "http://elysium-code.olympe.center" },
+      { label: "voir le site", link: "http://elysium.olympe.center" },
     ],
     metrics: [
       { value: "1260", label: "musiques" },
@@ -27,12 +27,12 @@ const projects = [
       { value: "1000", label: "albums" },
     ],
     images: [
-      "/src/assets/images/elysium-preview-home.png",
-      "/src/assets/images/elysium-preview-titles.png",
-      "/src/assets/images/elysium-preview-albums.png",
-      "/src/assets/images/elysium-preview-album.png",
-      "/src/assets/images/elysium-preview-artists.png",
-      "/src/assets/images/elysium-preview-artist.png",
+      "/images/elysium-preview-home.png",
+      "/images/elysium-preview-titles.png",
+      "/images/elysium-preview-albums.png",
+      "/images/elysium-preview-album.png",
+      "/images/elysium-preview-artists.png",
+      "/images/elysium-preview-artist.png",
     ],
   },
   {
@@ -52,8 +52,8 @@ const projects = [
       "Qrcode.React",
     ],
     links: [
-      { label: "voir le code", link: "https://hephaistos-code.olympe.center" },
-      { label: "voir le site", link: "https://hephaistos.olympe.center" },
+      { label: "voir le code", link: "http://hephaistos-code.olympe.center" },
+      { label: "voir le site", link: "http://hephaistos.olympe.center" },
     ],
     metrics: [
       { value: "4", label: "templates" },
@@ -62,10 +62,10 @@ const projects = [
       { value: "∞", label: "clips" },
     ],
     images: [
-      "/src/assets/images/hephaistos-preview-home.png",
-      "/src/assets/images/hephaistos-preview-configuration.png",
-      "/src/assets/images/hephaistos-preview-youtube.png",
-      "/src/assets/images/hephaistos-preview-download.png",
+      "/images/hephaistos-preview-home.png",
+      "/images/hephaistos-preview-configuration.png",
+      "/images/hephaistos-preview-youtube.png",
+      "/images/hephaistos-preview-download.png",
     ],
   },
 ];
