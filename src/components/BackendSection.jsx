@@ -31,7 +31,7 @@ const docker = [
     description: "Scraper Spotify, Apple Music et Deezer",
     stack: ["Python", "Playwright", "Chromium"],
     links: [
-      { label: "voir le code", link: "https://artemis-code.olympe.center" },
+      { label: "voir le code", link: "https://github.com/anthony-rgs/artemis" },
     ],
   },
   {
