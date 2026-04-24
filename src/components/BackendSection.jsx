@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import SectionTitle from "./SectionTitle";
 import useReveal from "@/hooks/useReveal";
+import useExternalTarget from "@/hooks/useExternalTarget";
 
 const detailHeading =
   "text-[10px] tracking-[0.14em] uppercase text-(--muted) mb-3 font-bold";
@@ -138,7 +139,7 @@ const anim = (visible, delay = 0) => ({
     : undefined,
 });
 
-function ServiceItem({ name, description, links, stack }) {
+function ServiceItem({ name, description, links, stack, target }) {
   return (
     <li className="border-b border-(--border) pb-3.5 grid gap-2">
       <div className={listItem}>
@@ -163,7 +164,7 @@ function ServiceItem({ name, description, links, stack }) {
               <a
                 key={link}
                 href={link}
-                target="_blank"
+                target={target}
                 rel="noopener"
                 className="relative text-[12px] text-(--muted) after:absolute after:bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-(--fg) after:transition-[width] after:duration-300 hover:after:w-full hover:text-(--fg)"
               >
@@ -182,6 +183,7 @@ export default function BackendSection() {
   const [stickyHeight, setStickyHeight] = useState(0);
   const [titleHeight, setTitleHeight] = useState(0);
   const [mobile, setMobile] = useState(() => window.innerWidth <= 900);
+  const target = useExternalTarget();
 
   const { ref: ref1, visible: v1 } = useReveal(140);
   const { ref: ref2, visible: v2 } = useReveal(140);
@@ -280,7 +282,7 @@ export default function BackendSection() {
             <a
               ref={refCTA}
               href="https://github.com/anthony-rgs/olympe"
-              target="_blank"
+              target={target}
               rel="noopener"
               className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
               style={anim(vCTA)}
@@ -328,6 +330,7 @@ export default function BackendSection() {
                   description={item.description}
                   links={item.links}
                   stack={item.stack}
+                  target={target}
                 />
               ))}
             </ul>
@@ -346,6 +349,7 @@ export default function BackendSection() {
                   description={item.description}
                   links={item.links}
                   stack={item.stack}
+                  target={target}
                 />
               ))}
             </ul>
@@ -364,6 +368,7 @@ export default function BackendSection() {
                   description={item.description}
                   links={item.links}
                   stack={item.stack}
+                  target={target}
                 />
               ))}
             </ul>

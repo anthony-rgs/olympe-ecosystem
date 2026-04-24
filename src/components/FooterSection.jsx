@@ -2,6 +2,7 @@ import { useState } from "react";
 import Eyebrow from "./Eyebrow";
 import useFitText from "@/hooks/useFitText";
 import useReveal from "@/hooks/useReveal";
+import useExternalTarget from "@/hooks/useExternalTarget";
 
 const EMAIL = "ringressi.anthony@gmail.com";
 
@@ -19,6 +20,7 @@ export default function FooterSection() {
   const [copied, setCopied] = useState(false);
   const [emailHovered, setEmailHovered] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const target = useExternalTarget();
   const { containerRef, fontSize } = useFitText(
     "Télécharger mon cv",
     "800 100px Syne",
@@ -67,7 +69,7 @@ export default function FooterSection() {
         <div className="overflow-hidden pb-1">
           <a
             href="/images/cv-ringressi-anthony.pdf"
-            target="_blank"
+            target={target}
             rel="noopener"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}

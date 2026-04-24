@@ -2,6 +2,7 @@ import { useState } from "react";
 import ImageModal from "./ImageModal";
 import useReveal from "@/hooks/useReveal";
 import Pill from "./Pill";
+import useExternalTarget from "@/hooks/useExternalTarget";
 
 export default function WebCard({
   index,
@@ -18,6 +19,7 @@ export default function WebCard({
   const [modalOpen, setModalOpen] = useState(false);
   const multi = images.length > 1;
   const { ref, visible } = useReveal(140);
+  const target = useExternalTarget();
 
   const prev = (e) => {
     e.stopPropagation();
@@ -71,7 +73,7 @@ export default function WebCard({
                       <a
                         key={link}
                         href={link}
-                        target="_blank"
+                        target={target}
                         rel="noopener"
                         className="min-w-fit relative text-[12px] font-semibold leading-[1.08] text-(--muted) hover:text-(--fg) transition-colors duration-300 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-(--fg) after:transition-[width] after:duration-300 hover:after:w-full"
                       >
@@ -126,7 +128,7 @@ export default function WebCard({
                       <a
                         key={link}
                         href={link}
-                        target="_blank"
+                        target={target}
                         rel="noopener"
                         className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
                       >
