@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Pill from "./Pill";
 import useFitText from "@/hooks/useFitText";
 import Eyebrow from "./Eyebrow";
@@ -5,6 +6,13 @@ import ScrollHint from "./ScrollHint";
 
 export default function HeroSection() {
   const { containerRef, fontSize } = useFitText("Orchestration");
+  const [mobile, setMobile] = useState(() => window.innerWidth <= 900);
+
+  useEffect(() => {
+    const ro = new ResizeObserver(() => setMobile(window.innerWidth <= 900));
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, []);
 
   return (
     <section
@@ -70,22 +78,25 @@ export default function HeroSection() {
               state="available"
               label="En fonctionnement"
               style={{
-                animation:
-                  "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both",
+                animation: mobile
+                  ? "slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both"
+                  : "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both",
               }}
             />
             <Pill
               label="Automatisation"
               style={{
-                animation:
-                  "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both",
+                animation: mobile
+                  ? "slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both"
+                  : "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both",
               }}
             />
             <Pill
               label="Système distribué"
               style={{
-                animation:
-                  "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.0s both",
+                animation: mobile
+                  ? "slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.0s both"
+                  : "slideLeftFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.0s both",
               }}
             />
           </div>
