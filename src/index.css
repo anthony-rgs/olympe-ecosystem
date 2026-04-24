@@ -23,6 +23,11 @@
       color var(--transition),
       border-color var(--transition);
   }
+
+  a,
+  button {
+    touch-action: manipulation;
+  }
 }
 
 @font-face {

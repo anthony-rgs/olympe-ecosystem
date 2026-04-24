@@ -35,10 +35,11 @@ export default function WebCard({
         className="group border border-(--border) rounded-(--radius) overflow-hidden hover:border-(--border-hover) transition-[border-color] duration-400 ease-out"
         style={{
           opacity: visible ? undefined : 0,
-          transform: visible ? undefined : "translateY(18px)",
+          transform: visible ? "translateZ(0)" : "translateY(18px)",
           animation: visible
             ? "slideUpFade 0.9s cubic-bezier(0.16, 1, 0.3, 1) both"
             : undefined,
+          WebkitTransform: visible ? "translateZ(0)" : "translateY(18px)",
         }}
       >
         <div className="grid grid-cols-2 max-[900px]:grid-cols-1 min-h-100">

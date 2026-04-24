@@ -218,7 +218,7 @@ export default function BackendSection() {
         style={{
           position: mobile ? "static" : "sticky",
           top: 0,
-          pointerEvents: "none",
+          pointerEvents: mobile ? "auto" : "none",
         }}
       >
         <div
@@ -308,7 +308,7 @@ export default function BackendSection() {
         className={mobile ? "" : "grid grid-cols-[1.1fr_0.9fr] gap-x-20"}
         style={{
           marginTop: mobile ? 40 : rightColMarginTop,
-          pointerEvents: "none",
+          pointerEvents: mobile ? "auto" : "none",
         }}
       >
         <div
