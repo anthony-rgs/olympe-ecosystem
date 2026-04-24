@@ -88,8 +88,8 @@ const interfaces = [
       "Jest",
     ],
     links: [
-      { label: "voir le site", link: "https://elysium.olympe.center" },
-      { label: "voir le code", link: "https://elysium-code.olympe.center" },
+      { label: "voir le site", link: "https://spotify-billions.club/" },
+      { label: "voir le code", link: "https://github.com/anthony-rgs/elysium" },
     ],
   },
   {
@@ -108,8 +108,8 @@ const interfaces = [
       "Qrcode.React",
     ],
     links: [
-      { label: "voir le site", link: "https://hephaistos.olympe.center" },
-      { label: "voir le code", link: "https://hephaistos-code.olympe.center" },
+      { label: "voir le site", link: "https://vexia.studio/" },
+      { label: "voir le code", link: "https://github.com/anthony-rgs/hephaistos" },
     ],
   },
 ];
@@ -121,10 +121,10 @@ const extension = [
       "Extension Chrome qui capture et transmet les cookies YouTube à Orphée via Hephaïstos.",
     stack: ["JS", "Manifest V3"],
     links: [
-      { label: "voir l'extension", link: "https://ambrosia.olympe.center" },
+      { label: "voir l'extension", link: "https://chromewebstore.google.com/detail/ambrosia/jpabbbaemgkidilifjlfdnpniphihgle?authuser=0&hl=fr" },
       {
         label: "voir le code",
-        link: "https://ambrosia-code.olympe.center",
+        link: "https://github.com/anthony-rgs/ambrosia",
       },
     ],
   },
@@ -279,7 +279,7 @@ export default function BackendSection() {
             </p>
             <a
               ref={refCTA}
-              href="https://olympe-code.olympe.center"
+              href="https://github.com/anthony-rgs/olympe"
               target="_blank"
               rel="noopener"
               className="group inline-flex h-7.25 items-center gap-1.75 w-fit border border-(--border) rounded-full px-3.75 py-1.75 text-[11px] tracking-[0.08em] uppercase text-(--muted) no-underline whitespace-nowrap transition-all duration-300 hover:bg-(--fg) hover:text-(--bg) hover:border-(--fg)"
