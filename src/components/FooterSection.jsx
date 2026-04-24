@@ -205,7 +205,7 @@ export default function FooterSection() {
             <a
               key={label}
               href={href}
-              target={external ? "_blank" : undefined}
+              target={external ? target : undefined}
               rel={external ? "noopener" : undefined}
               className="text-[11px] tracking-widest uppercase text-(--muted) hover:text-(--fg) transition-colors duration-300"
             >
@@ -220,7 +220,7 @@ export default function FooterSection() {
         © 2026 Anthony Ringressi • Design by{" "}
         <a
           href="https://www.linkedin.com/in/david-rodriguez-product-designer/"
-          target="_blank"
+          target={target}
           rel="noopener"
           className="text-[11px] tracking-widest text-(--muted) hover:text-(--fg) transition-colors duration-300 underline"
         >

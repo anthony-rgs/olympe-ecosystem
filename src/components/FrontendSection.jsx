@@ -18,8 +18,8 @@ const projects = [
       "Jest",
     ],
     links: [
-      { label: "voir le code", link: "https://github.com/anthony-rgs/elysium" },
-      { label: "voir le site", link: "https://spotify-billions.club/" },
+      { label: "voir le code", link: "https://elysium-code.olympe.center" },
+      { label: "voir le site", link: "https://elysium.olympe.center" },
     ],
     metrics: [
       { value: "1260", label: "musiques" },
@@ -52,8 +52,8 @@ const projects = [
       "Qrcode.React",
     ],
     links: [
-      { label: "voir le code", link: "https://github.com/anthony-rgs/hephaistos" },
-      { label: "voir le site", link: "https://vexia.studio/" },
+      { label: "voir le code", link: "https://hephaistos-code.olympe.center" },
+      { label: "voir le site", link: "https://hephaistos.olympe.center" },
     ],
     metrics: [
       { value: "4", label: "templates" },
