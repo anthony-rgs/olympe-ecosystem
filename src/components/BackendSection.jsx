@@ -259,7 +259,7 @@ export default function BackendSection() {
             >
               <strong>Artemis scrape chaque nuit</strong> les morceaux dépassant
               1 milliard de streams sur Spotify. Les données sont structurées,
-              ingérées en base, et exposées via une API.
+              ingérées en base et exposées via une API.
             </p>
             <p
               ref={ref3}
