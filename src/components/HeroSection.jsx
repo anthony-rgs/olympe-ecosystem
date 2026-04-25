@@ -69,9 +69,9 @@ export default function HeroSection() {
             }}
           >
             Olympe automatise la donnée musicale, du scraping à la génération de
-            vidéo
+            vidéo.
             <br />
-            Des services inspirés des dieux grecs, orchestrés en continu
+            Des services inspirés des dieux grecs, orchestrés en continu.
           </p>
           <div className="flex flex-col items-end max-[900px]:items-start gap-2.5">
             <Pill

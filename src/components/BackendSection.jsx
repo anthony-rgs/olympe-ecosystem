@@ -119,7 +119,7 @@ const extension = [
   {
     name: "Ambrosia",
     description:
-      "Extension Chrome qui capture et transmet les cookies YouTube à Orphée via Hephaïstos.",
+      "Extension Chrome qui capture et transmet les cookies YouTube à Orphée via Hephaïstos",
     stack: ["JS", "Manifest V3"],
     links: [
       { label: "voir l'extension", link: "https://ambrosia.olympe.center" },
