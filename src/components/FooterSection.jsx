@@ -219,7 +219,7 @@ export default function FooterSection() {
       <p className="text-[11px] text-(--muted) mt-8 pt-8 border-t border-(--border) text-center">
         © 2026 Anthony Ringressi • Design by{" "}
         <a
-          href="https://www.linkedin.com/in/david-rodriguez-product-designer/"
+          href="https://dvdrod.com/"
           target={target}
           rel="noopener"
           className="text-[11px] tracking-widest text-(--muted) hover:text-(--fg) transition-colors duration-300 underline"
