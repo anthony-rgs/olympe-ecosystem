@@ -122,7 +122,7 @@ export default function ImageModal({ images, startIndex = 0, onClose }) {
         )}
 
         {/* Counter */}
-        <span className="absolute top-6 left-1/2 -translate-x-1/2 text-[11px] tracking-[0.12em] uppercase text-white/50">
+        <span className="absolute top-4 left-1/2 -translate-x-1/2 text-[11px] tracking-[0.12em] uppercase text-white/50">
           {current + 1} / {images.length}
         </span>
       </div>

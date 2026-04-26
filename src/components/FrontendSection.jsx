@@ -29,10 +29,10 @@ const projects = [
     images: [
       "/images/elysium-preview-home.png",
       "/images/elysium-preview-titles.png",
-      "/images/elysium-preview-albums.png",
-      "/images/elysium-preview-album.png",
       "/images/elysium-preview-artists.png",
       "/images/elysium-preview-artist.png",
+      "/images/elysium-preview-albums.png",
+      "/images/elysium-preview-album.png",
     ],
   },
   {
@@ -63,8 +63,11 @@ const projects = [
     ],
     images: [
       "/images/hephaistos-preview-home.png",
+      "/images/hephaistos-preview-templates.png",
       "/images/hephaistos-preview-configuration.png",
       "/images/hephaistos-preview-youtube.png",
+      "/images/hephaistos-preview-json.png",
+      "/images/hephaistos-preview-billions-club.png",
       "/images/hephaistos-preview-download.png",
     ],
   },
