@@ -27,12 +27,24 @@ const projects = [
       { value: "1000", label: "albums" },
     ],
     images: [
-      "/images/elysium-preview-home.png",
-      "/images/elysium-preview-titles.png",
-      "/images/elysium-preview-artists.png",
-      "/images/elysium-preview-artist.png",
-      "/images/elysium-preview-albums.png",
-      "/images/elysium-preview-album.png",
+      { label: "Page d'accueil", image: "/images/elysium-preview-home.png" },
+      {
+        label: "Toutes les musiques",
+        image: "/images/elysium-preview-titles.png",
+      },
+      {
+        label: "Tous les artistes",
+        image: "/images/elysium-preview-artists.png",
+      },
+      {
+        label: "Un artiste sélectionné",
+        image: "/images/elysium-preview-artist.png",
+      },
+      { label: "Tous les albums", image: "/images/elysium-preview-albums.png" },
+      {
+        label: "Un album sélectionné",
+        image: "/images/elysium-preview-album.png",
+      },
     ],
   },
   {
@@ -62,13 +74,34 @@ const projects = [
       { value: "∞", label: "clips" },
     ],
     images: [
-      "/images/hephaistos-preview-home.png",
-      "/images/hephaistos-preview-templates.png",
-      "/images/hephaistos-preview-configuration.png",
-      "/images/hephaistos-preview-youtube.png",
-      "/images/hephaistos-preview-json.png",
-      "/images/hephaistos-preview-billions-club.png",
-      "/images/hephaistos-preview-download.png",
+      {
+        label: "Section d'accueil",
+        image: "/images/hephaistos-preview-home.png",
+      },
+      {
+        label: "Sélectionner un template et un mode",
+        image: "/images/hephaistos-preview-templates.png",
+      },
+      {
+        label: "Configuration",
+        image: "/images/hephaistos-preview-configuration.png",
+      },
+      {
+        label: "Sélectionner une source vidéo",
+        image: "/images/hephaistos-preview-youtube.png",
+      },
+      {
+        label: "Importer un json",
+        image: "/images/hephaistos-preview-json.png",
+      },
+      {
+        label: "Sélectionner des musiques à plus de 1 milliard d'écoute",
+        image: "/images/hephaistos-preview-billions-club.png",
+      },
+      {
+        label: "Suivi de la création de la vidéo",
+        image: "/images/hephaistos-preview-download.png",
+      },
     ],
   },
 ];

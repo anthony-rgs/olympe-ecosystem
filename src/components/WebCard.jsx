@@ -163,11 +163,11 @@ export default function WebCard({
               style={{ background: gradient }}
             />
 
-            {images.map((src, i) => (
+            {images.map((img, i) => (
               <img
                 key={i}
-                src={src}
-                alt={`${title} ${i + 1}`}
+                src={img.image}
+                alt={img.label || `${title} ${i + 1}`}
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-900 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover/vis:scale-[1.04] z-1"
                 style={{ opacity: i === current ? 1 : 0 }}
               />
