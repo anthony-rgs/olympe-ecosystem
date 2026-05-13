@@ -118,6 +118,7 @@ const interfaces = [
 const extension = [
   {
     name: "Ambrosia",
+    tag: { label: "", type: "deprecated" },
     description:
       "Extension Chrome qui capture et transmet les cookies YouTube à Orphée via Hephaïstos",
     stack: ["JS", "Manifest V3"],
@@ -139,12 +140,24 @@ const anim = (visible, delay = 0) => ({
     : undefined,
 });
 
-function ServiceItem({ name, description, links, stack, target }) {
+const tagStyles = {
+  deprecated:
+    "text-[9px] h-5 flex items-center tracking-[0.08em] uppercase px-2.5 rounded-full border border-dashed border-(--muted) text-(--muted) opacity-50",
+};
+
+function ServiceItem({ name, description, links, stack, target, tag }) {
   return (
     <li className="border-b border-(--border) pb-3.5 grid gap-2">
       <div className={listItem}>
         <div className={itemLeft}>
-          <span className={itemCompany}>{name}</span>
+          <div className="flex items-center gap-2">
+            <span className={itemCompany}>{name}</span>
+            {tag && (
+              <span className={tagStyles[tag.type]}>
+                {tag.label || (tag.type === "deprecated" ? "Dépréciée" : tag.type)}
+              </span>
+            )}
+          </div>
           <span className={itemRole}>{description}</span>
           <div className="flex flex-wrap gap-2">
             {stack.map((el) => (
@@ -369,6 +382,7 @@ export default function BackendSection() {
                   links={item.links}
                   stack={item.stack}
                   target={target}
+                  tag={item.tag}
                 />
               ))}
             </ul>
