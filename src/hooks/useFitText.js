@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function useFitText(text, font = "800 100px Syne", extraPx = 0) {
+export default function useFitText(
+  text,
+  font = "800 100px Syne",
+  extraPx = 0,
+  onReady,
+) {
   const containerRef = useRef(null);
   const [fontSize, setFontSize] = useState(null);
 
@@ -22,7 +27,10 @@ export default function useFitText(text, font = "800 100px Syne", extraPx = 0) {
     const observer = new ResizeObserver(calculate);
     if (containerRef.current) observer.observe(containerRef.current);
 
-    document.fonts.ready.then(calculate);
+    document.fonts.ready.then(() => {
+      calculate();
+      onReady?.();
+    });
 
     return () => {
       observer.disconnect();

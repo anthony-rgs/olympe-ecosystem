@@ -7,7 +7,11 @@ import useExternalTarget from "@/hooks/useExternalTarget";
 const EMAIL = "ringressi.anthony@gmail.com";
 
 const links = [
-  { label: "Email", href: `mailto:${EMAIL}` },
+  {
+    label: "Portfolio",
+    href: "https://anthony-ringressi.fr",
+    external: true,
+  },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/anthony-ringressi/",
@@ -16,15 +20,16 @@ const links = [
   { label: "GitHub", href: "https://github.com/anthony-rgs", external: true },
 ];
 
-export default function FooterSection() {
+export default function FooterSection({ onReady }) {
   const [copied, setCopied] = useState(false);
   const [emailHovered, setEmailHovered] = useState(false);
   const [hovered, setHovered] = useState(false);
   const target = useExternalTarget();
   const { containerRef, fontSize } = useFitText(
-    "Télécharger mon cv",
+    "Voir mon portfolio",
     "800 100px Syne",
     70,
+    onReady,
   );
   const { ref: revealRef, visible } = useReveal(120);
   const { ref: refBar, visible: vBar } = useReveal(120);
@@ -68,7 +73,7 @@ export default function FooterSection() {
         </span>
         <div className="overflow-hidden pb-1">
           <a
-            href="/images/cv-ringressi-anthony.pdf"
+            href="https://anthony-ringressi.fr"
             target={target}
             rel="noopener"
             onMouseEnter={() => setHovered(true)}
@@ -83,7 +88,7 @@ export default function FooterSection() {
                 : undefined,
             }}
           >
-            Voir mon CV{" "}
+            Portfolio{" "}
             <svg
               width="0.7em"
               height="0.7em"

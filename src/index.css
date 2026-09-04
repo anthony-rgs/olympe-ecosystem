@@ -12,6 +12,12 @@
     transition: none !important;
   }
 
+  [data-loading="true"] *,
+  [data-loading="true"] *::before,
+  [data-loading="true"] *::after {
+    animation-play-state: paused !important;
+  }
+
   *,
   *::before,
   *::after {
