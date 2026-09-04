@@ -4,8 +4,13 @@ import useFitText from "@/hooks/useFitText";
 import Eyebrow from "./Eyebrow";
 import ScrollHint from "./ScrollHint";
 
-export default function HeroSection() {
-  const { containerRef, fontSize } = useFitText("Orchestration");
+export default function HeroSection({ onReady }) {
+  const { containerRef, fontSize } = useFitText(
+    "Écosytème",
+    undefined,
+    undefined,
+    onReady,
+  );
   const [mobile, setMobile] = useState(() => window.innerWidth <= 900);
 
   useEffect(() => {
@@ -55,7 +60,7 @@ export default function HeroSection() {
                     "slideUp 2s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both",
                 }}
               >
-                Orchestration
+                Écosytème
               </p>
             </div>
           </div>
